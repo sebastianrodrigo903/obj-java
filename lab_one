@@ -111,3 +111,18 @@ while (again.equalsIgnoreCase("yes")) {
             String uvTip = (uvIndex >= 6) ? "Use sunscreen." : "UV level is safe.";
             String rainTip = (precipitation >= 50) ? "Carry an umbrella." : "Low chance of rain.";
             String windTip = (windSpeed > 40) ? "Windy conditions." : "Light winds.";
+
+ // STEP 5: Full report
+            String report =
+                    "\n--- Weather Report ---\n" +
+                    "Conditions: " + conditions + "\n" +
+                    "Precipitation: " + precipitation + "%\n" +
+                    "Wind Speed: " + windSpeed + " km/h\n" +
+                    "High Temp: " + highTempInt + "\n" +
+                    "Low Temp: " + lowTempInt + "\n" +
+                    "UV Index: " + uvIndex + "\n\n" +
+                    "Tips:\n" +
+                    "- " + uvTip + "\n" +
+                    "- " + rainTip + "\n" +
+                    "- " + windTip + "\n";
+

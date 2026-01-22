@@ -126,3 +126,6 @@ while (again.equalsIgnoreCase("yes")) {
                     "- " + rainTip + "\n" +
                     "- " + windTip + "\n";
 
+          // STEP 6: Output
+                System.out.println(report);
+

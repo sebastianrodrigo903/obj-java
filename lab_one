@@ -129,3 +129,8 @@ while (again.equalsIgnoreCase("yes")) {
           // STEP 6: Output
                 System.out.println(report);
 
+             // STEP 7: Repeat
+            System.out.print("Do you want to enter another day? (yes/no): ");
+            again = input.nextLine();
+        }
+

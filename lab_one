@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 /*
@@ -134,3 +135,7 @@ while (again.equalsIgnoreCase("yes")) {
             again = input.nextLine();
         }
 
+     input.close();
+        System.out.println("Program finished.");
+    }
+}

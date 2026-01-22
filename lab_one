@@ -26,3 +26,79 @@ while (again.equalsIgnoreCase("yes")) {
             int precipitation;
             int windSpeed;
  
+     // STEP 2: Get user input
+            System.out.print("Enter today's weather conditions: ");
+            conditions = input.nextLine();
+
+            // Precipitation validation
+            while (true) {
+                System.out.print("Enter precipitation chance (0-100): ");
+                precipitationStr = input.nextLine();
+                try {
+                    precipitation = Integer.parseInt(precipitationStr);
+                    if (precipitation < 0 || precipitation > 100) {
+                        System.out.println("Enter a number between 0 and 100.");
+                    } else {
+                        break;
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input. Enter a number.");
+                }
+            }
+
+            // Wind speed validation
+            while (true) {
+                System.out.print("Enter wind speed (km/h): ");
+                windSpeedStr = input.nextLine();
+                try {
+                    windSpeed = Integer.parseInt(windSpeedStr);
+                    if (windSpeed < 0) {
+                        System.out.println("Wind speed cannot be negative.");
+                    } else {
+                        break;
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input. Enter a number.");
+                }
+            }
+
+            // High temperature
+            while (true) {
+                System.out.print("Enter high temperature: ");
+                try {
+                    highTemp = Double.parseDouble(input.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid number.");
+                }
+            }
+
+            // Low temperature validation
+            while (true) {
+                System.out.print("Enter low temperature: ");
+                try {
+                    lowTemp = Double.parseDouble(input.nextLine());
+                    if (lowTemp > highTemp) {
+                        System.out.println("Low temperature cannot be higher than high temperature.");
+                    } else {
+                        break;
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid number.");
+                }
+            }
+
+            // UV index validation
+            while (true) {
+                System.out.print("Enter UV index (0-11): ");
+                try {
+                    uvIndex = Integer.parseInt(input.nextLine());
+                    if (uvIndex < 0 || uvIndex > 11) {
+                        System.out.println("Enter a value between 0 and 11.");
+                    } else {
+                        break;
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid number.");
+                }
+            }

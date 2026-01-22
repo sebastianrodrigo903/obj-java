@@ -106,3 +106,8 @@ while (again.equalsIgnoreCase("yes")) {
              // STEP 3: Typecasting
             int highTempInt = (int) highTemp;
             int lowTempInt = (int) lowTemp;
+
+             // STEP 4: Conditionals
+            String uvTip = (uvIndex >= 6) ? "Use sunscreen." : "UV level is safe.";
+            String rainTip = (precipitation >= 50) ? "Carry an umbrella." : "Low chance of rain.";
+            String windTip = (windSpeed > 40) ? "Windy conditions." : "Light winds.";

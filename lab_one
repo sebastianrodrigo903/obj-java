@@ -102,3 +102,7 @@ while (again.equalsIgnoreCase("yes")) {
                     System.out.println("Invalid number.");
                 }
             }
+
+             // STEP 3: Typecasting
+            int highTempInt = (int) highTemp;
+            int lowTempInt = (int) lowTemp;

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+/*
+    Week 2 Lab: Weather Report Program
+    Topics: Conditional statements, loops, typecasting, input validation
+    Objective: Ask the user for weather info, validate input, and display a full report
+*/
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        String again = "yes"; 
+
+while (again.equalsIgnoreCase("yes")) {
+
+            // STEP 1: Declare variables
+            String conditions;
+            String precipitationStr;
+            String windSpeedStr;
+
+            double highTemp;
+            double lowTemp;
+            int uvIndex;
+
+            int precipitation;
+            int windSpeed;
+ 
